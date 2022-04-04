@@ -1,0 +1,104 @@
+digraph {
+  rankdir=LR;
+  node [shape = none, label=""]; 0;
+  node [shape = circle, label="11"]; 11;
+  node [shape = circle, label="12"]; 12;
+  node [shape = circle, label="13"]; 13;
+  node [shape = circle, label="14"]; 14;
+  node [shape = circle, label="15"]; 15;
+  node [shape = circle, label="16"]; 16;
+  
+  node [shape = circle, label="21"]; 21;
+  node [shape = circle, label="22"]; 22;
+  node [shape = circle, label="23"]; 23;
+  node [shape = circle, label="24"]; 24;
+  node [shape = circle, label="25"]; 25;
+  node [shape = circle, label="26"]; 26;
+  
+  node [shape = circle, label="31"]; 31;
+  node [shape = circle, label="32"]; 32;
+  node [shape = circle, label="33"]; 33;
+  node [shape = circle, label="34"]; 34;
+  node [shape = circle, label="35"]; 35;
+  node [shape = circle, label="36"]; 36;
+  
+  node [shape = circle, label="41"]; 41;
+  node [shape = doublecircle, label="42"]; 42;
+  node [shape = doublecircle, label="43"]; 43;
+  node [shape = doublecircle, label="44"]; 44;
+  node [shape = doublecircle, label="45"]; 45;
+  node [shape = doublecircle, label="46"]; 46;
+  
+  node [shape = circle, label="51"]; 51;
+  node [shape = circle, label="52"]; 52;
+  node [shape = circle, label="53"]; 53;
+  node [shape = circle, label="54"]; 54;
+  node [shape = circle, label="55"]; 55;
+  node [shape = circle, label="56"]; 56;
+  
+  0 -> 11 [label=""]
+  11 -> 25 [label = "a"];
+  11 -> 22 [label = "b"];
+  12 -> 26 [label = "a"];
+  12 -> 23 [label = "b"];
+  13 -> 24 [label = "a"];
+  13 -> 21 [label = "b"];
+  14 -> 23 [label = "a"];
+  14 -> 25 [label = "b"];
+  15 -> 21 [label = "a"];
+  15 -> 26 [label = "b"];
+  16 -> 22 [label = "a"];
+  16 -> 24 [label = "b"];
+  
+  21 -> 35 [label = "a"];
+  21 -> 32 [label = "b"];
+  22 -> 36 [label = "a"];
+  22 -> 33 [label = "b"];
+  23 -> 34 [label = "a"];
+  23 -> 31 [label = "b"];
+  24 -> 33 [label = "a"];
+  24 -> 35 [label = "b"];
+  25 -> 31 [label = "a"];
+  25 -> 36 [label = "b"];
+  26 -> 32 [label = "a"];
+  26 -> 34 [label = "b"];
+  
+  31 -> 45 [label = "a"];
+  31 -> 42 [label = "b"];
+  32 -> 46 [label = "a"];
+  32 -> 43 [label = "b"];
+  33 -> 44 [label = "a"];
+  33 -> 41 [label = "b"];
+  34 -> 43 [label = "a"];
+  34 -> 45 [label = "b"];
+  35 -> 41 [label = "a"];
+  35 -> 46 [label = "b"];
+  36 -> 42 [label = "a"];
+  36 -> 44 [label = "b"];
+  
+  41 -> 55 [label = "a"];
+  41 -> 52 [label = "b"];
+  42 -> 56 [label = "a"];
+  42 -> 53 [label = "b"];
+  43 -> 54 [label = "a"];
+  43 -> 51 [label = "b"];
+  44 -> 53 [label = "a"];
+  44 -> 55 [label = "b"];
+  45 -> 51 [label = "a"];
+  45 -> 56 [label = "b"];
+  46 -> 52 [label = "a"];
+  46 -> 54 [label = "b"];
+  
+  51 -> 45 [label = "a"];
+  51 -> 42 [label = "b"];
+  52 -> 46 [label = "a"];
+  52 -> 43 [label = "b"];
+  53 -> 44 [label = "a"];
+  53 -> 41 [label = "b"];
+  54 -> 43 [label = "a"];
+  54 -> 45 [label = "b"];
+  55 -> 41 [label = "a"];
+  55 -> 46 [label = "b"];
+  56 -> 42 [label = "a"];
+  56 -> 44 [label = "b"];
+}

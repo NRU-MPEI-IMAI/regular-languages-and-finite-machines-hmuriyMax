@@ -1,0 +1,15 @@
+digraph {
+  rankdir=LR;
+  node [shape = none, label=""]; 0;
+  node [shape = circle, label="1"]; 11;
+  node [shape = circle, label="2"]; 22;
+  node [shape = circle, label="3"]; 31;
+  node [shape = circle, label="5"]; 41;
+  node [shape = doublecircle, label="4"]; 42;
+  0 -> 11 [label=""]
+  11 -> 22 [label = "a, b"];
+  22 -> 31 [label = "a, b"];
+  31 -> 42 [label = "a, b"];
+  41 -> 42 [label = "a, b"];
+  42 -> 41 [label = "a, b"];
+}
