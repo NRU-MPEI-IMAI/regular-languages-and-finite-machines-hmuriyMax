@@ -230,4 +230,99 @@
     \begin{center}
         \includegraphics[width=1\textwidth]{pic3_1_2.dot}\\
     \end{center}
+    
+    2. $a(a(ab)^*b)^*(ab)^*$\\
+    Недетерминированный КА по данному выражению:
+    \begin{center}
+        \includegraphics[width=1\textwidth]{pic3_2_1.dot}\\
+    \end{center}
+    \begin{center}
+        \begin{tabular}{|c|c|c|}
+            \hline
+            Сочетания точек & По А & По В \\
+            \hline
+                1 & 2 & \\
+                2 & 38 & \\
+                38 & 4 & 69 \\
+                4 &  & 5 \\
+                69 & 38 & \\
+                5 & 4 & 6 \\
+                8 & & 9 \\
+                6 & 38 & \\
+                9 & 8 & \\
+            \hline
+        \end{tabular}\\
+    \end{center}
+    Теперь можем нарисовать ДКА:
+    \begin{center}
+        \includegraphics[width=1\textwidth]{pic3_2_2.dot}\\
+    \end{center}
+    Его можно минимизировать:
+    \begin{center}
+        \includegraphics[width=1\textwidth]{pic3_2_3.dot}\\
+    \end{center}
+    
+    3. $(a+(a+b)(a+b)b)*$\\
+    Недетерминированный КА по данному выражению:
+    \begin{center}
+        \includegraphics[width=0.6\textwidth]{pic3_3_1.dot}\\
+    \end{center}
+    \begin{center}
+        \begin{tabular}{|c|c|c|}
+            \hline
+            Сочетания точек & По А & По В \\
+            \hline
+                1 & 12 & 2\\
+                12 & 123 & 23\\
+                2 & 3 & 3 \\
+                3 &  & 1\\
+                123 & 123 & 123 \\
+                23 & 3 & 13 \\
+                13 & 12 & 12 \\
+            \hline
+        \end{tabular}\\
+    \end{center}
+    Теперь можем нарисовать ДКА:
+    \begin{center}
+        \includegraphics[width=1\textwidth]{pic3_3_2.dot}\\
+    \end{center}
+    Он минимален
+    
+    4. $(b+c)((ab)^*c+(ba)^*)^*$\\
+    По счастливому стечению обстоятельств удаётся сразу построить ДКА:
+    \begin{center}
+        \includegraphics[width=1\textwidth]{pic3_4_1.dot}\\
+    \end{center}
+    Кажется, он еще и минимальный. Победа!
+    
+    5. $(a+b)^+(aa+bb+abab+baba)(a+b)^+$\\
+    Недетерминированный КА по данному выражению:
+    \begin{center}
+        \includegraphics[width=1\textwidth]{pic3_5_1.dot}\\
+    \end{center}
+    \begin{center}
+        Исправить
+        \begin{tabular}{|c|c|c|}
+            \hline
+            Сочетания точек & По А & По В \\
+            \hline
+                1 & 2 & 2\\
+                2 & 13 & 17\\
+                13 & 26 & 24 \\
+                17 & 28 & 26\\
+                26 & 110 & 110 \\
+                24 & 15 & 1 \\
+                28 & 1 & 19 \\
+                110 & 210 & 210\\
+                15 & 2 & 26\\
+                19 & 26 & 2\\
+                210 & 110 & 110\\
+            \hline
+        \end{tabular}\\
+    \end{center}
+    Теперь можем нарисовать ДКА:
+    \begin{center}
+        \includegraphics[width=1\textwidth]{pic3_5_2.dot}\\
+    \end{center}
+    
 \end{document}
